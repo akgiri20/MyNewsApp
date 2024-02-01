@@ -29,7 +29,7 @@ export class News extends Component {
     };
     document.title = `${this.capitalizeFirstLetter(
       this.props.category
-    )} - NewsMonkey`;
+    )} - MyNews`;
   }
 
   async updateNews() {
@@ -76,7 +76,7 @@ export class News extends Component {
     return (
       <main>
         <h1 className="text-center" style={{ margin: "35px 0px" }}>
-          NewsMonkey - Top {this.capitalizeFirstLetter(this.props.category)}{" "}
+          MyNews - Top {this.capitalizeFirstLetter(this.props.category)}{" "}
           Headlines
         </h1>
         {this.state.loading && <Spinner />}
